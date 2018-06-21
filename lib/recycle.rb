@@ -32,3 +32,28 @@
 #5. Define a method called `key_and_data` that takes a hash as an argument.
 #This method should print out each key and value in the hash in a sentence like this: `The #{key} is #{value}`
 #You should use the `each` method to iterate over your hash to print out that sentence
+def address(recycling_info)
+  recycling_info["address"]
+end
+
+def borough(recycling_info)
+  recycling_info["borough"]
+end
+
+def all_keys(recycling_info)
+  recycling_info.each_key do |info|
+    puts info
+  end
+end
+
+def all_data(recycling_info)
+  recycling_info.each_value do |data|
+    puts data
+  end
+end
+
+def key_and_data(recycling_info)
+  recycling_info.each do |topic, data|
+    puts "The #{topic} is #{data}"
+  end
+end
